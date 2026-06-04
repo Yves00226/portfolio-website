@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Pie Chart</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:40px;
+}
+
+.container{
+    width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+}
+
+.chart{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    margin:30px auto;
+
+    background: conic-gradient(
+        #984ea7 0deg 216.36deg,
+        #f28e2b 216.36deg 282.96deg,
+        #e15759 282.96deg 327.96deg,
+        #76b7b2 327.96deg 348.84deg,
+        #59a14f 348.84deg 356.76deg,
+        #edc949 356.76deg 360deg
+    );
+}
+
+.legend{
+    width:400px;
+    margin:auto;
+}
+
+.legend-item{
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+}
+
+.color-box{
+    width:20px;
+    height:20px;
+    margin-right:10px;
+}
+
+.purple{ background:#8e4ea7; }
+.orange{ background:#f28e2b; }
+.red{ background:#e15759; }
+.teal{ background:#76b7b2; }
+.green{ background:#59a14f; }
+.yellow{ background:#edc949; }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>United States Population by Race (2019)</h1>
+
+<div class="chart"></div>
+
+<div class="legend">
+
+    <div class="legend-item">
+        <div class="color-box blue"></div>
+        Caucasian — 60.1%
+    </div>
+
+    <div class="legend-item">
+        <div class="color-box orange"></div>
+        Hispanic — 18.5%
+    </div>
+
+    <div class="legend-item">
+        <div class="color-box red"></div>
+        Black — 12.5%
+    </div>
+
+    <div class="legend-item">
+        <div class="color-box teal"></div>
+        Asian — 5.8%
+    </div>
+
+    <div class="legend-item">
+        <div class="color-box green"></div>
+        Multi-racial — 2.2%
+    </div>
+
+    <div class="legend-item">
+        <div class="color-box yellow"></div>
+        Native Peoples — 0.9%
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
