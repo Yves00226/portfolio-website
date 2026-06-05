@@ -1,117 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS Pie Chart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yves Sandwidi Portfolio</title>
 
-<style>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
 
-body{
-    font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    padding:40px;
-}
+        body{
+            background:#f4f4f4;
+            color:#333;
+            line-height:1.6;
+        }
 
-.container{
-    width:700px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+        header{
+            background:#1e3a8a;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
 
-h1{
-    text-align:center;
-}
+        header h1{
+            font-size:3rem;
+        }
 
-.chart{
-    width:350px;
-    height:350px;
-    border-radius:50%;
-    margin:30px auto;
+        header p{
+            margin-top:10px;
+            font-size:1.2rem;
+        }
 
-    background: conic-gradient(
-        #984ea7 0deg 216.36deg,
-        #f28e2b 216.36deg 282.96deg,
-        #e15759 282.96deg 327.96deg,
-        #76b7b2 327.96deg 348.84deg,
-        #59a14f 348.84deg 356.76deg,
-        #edc949 356.76deg 360deg
-    );
-}
+        nav{
+            background:#111827;
+            text-align:center;
+            padding:15px;
+        }
 
-.legend{
-    width:400px;
-    margin:auto;
-}
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
 
-.legend-item{
-    display:flex;
-    align-items:center;
-    margin:10px 0;
-}
+        section{
+            max-width:1000px;
+            margin:auto;
+            padding:50px 20px;
+        }
 
-.color-box{
-    width:20px;
-    height:20px;
-    margin-right:10px;
-}
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            margin-bottom:20px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
 
-.purple{ background:#8e4ea7; }
-.orange{ background:#f28e2b; }
-.red{ background:#e15759; }
-.teal{ background:#76b7b2; }
-.green{ background:#59a14f; }
-.yellow{ background:#edc949; }
+        h2{
+            color:#1e3a8a;
+            margin-bottom:15px;
+        }
 
-</style>
+        ul{
+            padding-left:20px;
+        }
+
+        footer{
+            background:#111827;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        .project{
+            margin-bottom:15px;
+        }
+
+        .project h3{
+            color:#2563eb;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+<header>
+    <h1>Yves Sandwidi</h1>
+    <p>BSIST Student | Future IT Professional | Web Development Learner</p>
+</header>
 
-<h1>United States Population by Race (2019)</h1>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<div class="chart"></div>
-
-<div class="legend">
-
-    <div class="legend-item">
-        <div class="color-box blue"></div>
-        Caucasian — 60.1%
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Yves Sandwidi. I am a student pursuing a Bachelor of Science
+            in Information Systems and Technology (BSIST). I am interested in technology,
+            web development, information systems, and learning new technical skills.
+            My goal is to build practical solutions that help organizations and users
+            work more efficiently.
+        </p>
     </div>
+</section>
 
-    <div class="legend-item">
-        <div class="color-box orange"></div>
-        Hispanic — 18.5%
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (Beginner)</li>
+            <li>Microsoft Office</li>
+            <li>Database Fundamentals</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+        </ul>
     </div>
+</section>
 
-    <div class="legend-item">
-        <div class="color-box red"></div>
-        Black — 12.5%
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal website showcasing my background, skills, and projects.</p>
+        </div>
+
+        <div class="project">
+            <h3>Web Development Assignments</h3>
+            <p>Created web pages using HTML and CSS as part of coursework and learning activities.</p>
+        </div>
+
+        <div class="project">
+            <h3>Information Systems Coursework</h3>
+            <p>Completed projects involving technology, business processes, and information systems concepts.</p>
+        </div>
     </div>
+</section>
 
-    <div class="legend-item">
-        <div class="color-box teal"></div>
-        Asian — 5.8%
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: your-email@example.com</p>
+        <p>LinkedIn: Add your LinkedIn profile here</p>
+        <p>GitHub: github.com/Yves00226</p>
     </div>
+</section>
 
-    <div class="legend-item">
-        <div class="color-box green"></div>
-        Multi-racial — 2.2%
-    </div>
-
-    <div class="legend-item">
-        <div class="color-box yellow"></div>
-        Native Peoples — 0.9%
-    </div>
-
-</div>
-
-</div>
+<footer>
+    <p>&copy; 2026 Yves Sandwidi. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
